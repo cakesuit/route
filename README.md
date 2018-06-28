@@ -16,7 +16,7 @@ Load Helper on your config/bootstrap.php file:
 <?php
 ...
 
-Plugin::load('Cakesuit/Route', ['bootstrap' => false, 'routes' => false]);
+Plugin::load('Cakesuit/Route');
 ```
 
 Load Helper on your AppView.php file:
@@ -36,7 +36,7 @@ Define routes:
 Route::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/users', ['controller' => 'Users', 'action' => 'index'], ['_name' => 'users:index']);
     $routes->connect('/users/:id', ['controller' => 'Users', 'action' => 'view'], ['_name' => 'users:view']);
-    // OR simple with method get
+    // OR simple with method get if you use version >= 3.5.0
     $routes->get('/users', ['controller' => 'Users', 'action' => 'index'], 'users:index');
     $routes->get('/users/view/:id', ['controller' => 'Users', 'action' => 'view'], 'users:view');
 });
