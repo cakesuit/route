@@ -3,6 +3,12 @@
     "description": "Cakesuit/Route plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Frédéric KOLLER",
+            "email": "labelsuisse@gmail.com"
+        }
+    ],
     "require": {
         "cakephp/cakephp": "^3.5"
     },
